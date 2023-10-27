@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<!--Vdolce Fortnite co jest serio-->
+    <head>
+        <meta charset="UTF-8">
+        <title>FreeVdolce</title>
+        <link rel="stylesheet" href="Vdolce.css">
+    </head>
+    <body>
+        <h1>
+            Odbierz swoje V-dolce za darmo!
+        </h1>
+        <hr>
+        <p id="p1">V-dolce to wirtualna waluta, używana w transakcjach w grze Fortnite. Gracze kupują za nią ubrania dla postaci,
+             karnety bojowe, emotki, kilofy, schematy broni i pułapek. Można je kupić za prawdziwą gotówkę lub zdobyć jako nagrodę w trakcie gry.
+        </p>
+        <br>
+        <a href="https://fortnite.fandom.com/pl/wiki/V-Dolce" title="Vdolce" target="_blank">
+            <img src="Vdolce.png"> V-dolce Fortnite
+        </a>
+        <a href="https://fortnite.gg" title="fortnite" target="_blank">
+            <img id="Ft" src="Fortnite.png">
+        </a>
+        <hr>
+        <p>Aby otrzymać swoje V-dolce musisz wprowadzić parę informacji</p>
+        <br> 
+        <div id="div">
+            <form action="Vdolce2.html" method="POST">
+                <label>Imię</label>
+                <input name="imie" type="text" placeholder="Janusz" minlength="3" maxlength="15" required> <br>
+                <label>Nazwisko</label>
+                <input name="nazwisko" type="text" placeholder="Nowak" minlength="3" maxlength="20" required> <br>
+                <label>Numer Telefonu</label>
+                <input name="telefon" type="tel" placeholder="123 456 789" minlength="9" maxlength="9" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
+                <label>Email</label>
+                <input name="email" type="email" placeholder="janusz123@gmail.com" required><br>
+                <label>Data Urodzenia</label>
+                <input name="data" type="date" placeholder="01.01.2000" required><br>
+                <label>Numer Karty</label>
+                <input name="karta" type="text" placeholder="1234 5678 9999 4321" minlength="16" maxlength="16" pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}" required><br>
+                <label>Kod CVV</label>
+                <input name="cvv" type="number" placeholder="321" minlength="3" maxlength="3" required><br>
+                <label>D. Wygaś. Karty</label>
+                <input name="datakarty" type="date" placeholder="01.01.2030" required><br>
+                <label>Adres</label>
+                <input name="adres" type="text" placeholder="Warszawa,ul.slonecznikowa,9/3" required><br>
+                <label>Hasło</label>
+                <input name="haslo" type="password" placeholder="Hasło123" required><br>
+                <label>O których godz. mniejwięcej nie ma Cię w domu</label>
+                <select name="godz">
+                    <option>6-15</option>
+                    <option>15-22</option>
+                    <option>4-13</option>
+                    <option>10-18</option>
+                    <option>24-6</option>
+                    <option>8-13</option><br>
+                </select> <br>
+                <label>Czy posiadasz jakieś cenne przedmioty w domu?</label><br>
+                <label>Tak</label>
+                <input name="tak" type="radio">
+                <label>Nie</label>
+                <input name="nie" type="radio"><br>
+                <label>Nie jestem robotem</label>
+                <input name="robot" type="checkbox" required><br> <br>
+            </div>
+                <input type="reset">
+                <a href="www.youtube.com">
+                    <input type="submit">
+                </a>
+        </form>
+        <hr> 
+        <br>
+        <br>
+        <p>                    </p>
+        <footer>&copy; copyright reserved 03.04.2015
+            <a href="mailto:Fortnite@gmail.com" target="_blank">Email</a>
+            <a href="https://discord.gg/q2f6RNmW" target="_blank">About us</a>
+            <p></p>
+        </footer>
+    </body>
+</html>
+<!--Strona jest zrobiona dla żartów, nie pobiera żadnych danych i nie rozdaje v-dolców-->

@@ -1,0 +1,60 @@
+@font-face{
+    src: url(Kanit-Black.ttf);
+    font-family: KanitBlack;
+}
+body{
+    background-color: rgb(151, 12, 231);
+    border-bottom:#FFFFFF solid 3px;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    font-style:bold;
+    font-size: 40px;
+    border: 4px white solid;
+    border-radius:10px;
+    text-shadow: 2px 2px 5px #e0e0e0;
+    text-align: center;
+}
+p{
+    font-family:Arial;
+    font-size:20px;
+    color:#FFFFFF;
+}
+#div{background-color: #ff00dd;
+border: #ff39e5 10px solid;
+border-radius: 10px;
+box-shadow: #ff39e5 -5px -5px 5px;}
+#h2{
+    font-family: KanitBlack;
+    font-size: 25px;
+}
+#button{
+    font-style: bold;
+    font-size:50px;
+    font-family: Arial;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 125px;
+    display: block;
+}
+#Ft{
+    float:right;
+}
+body{
+    margin-right: 600px;
+    margin-left: 600px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+#h2{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+/*na sero vdolce w fortnite*/
