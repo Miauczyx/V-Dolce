@@ -19,12 +19,12 @@ h1{
 }
 p{
     font-family:Arial;
-    font-size:20px;
+    font-size:25px;
     color:#FFFFFF;
     text-align: center;
 }
 #div{background-image: url(purple.png) ;
-    border: #ff39e5 10px solid;
+    border: #000000 10px solid;
     border-radius: 10px;
     display: block;
     margin-left: auto;
@@ -37,6 +37,8 @@ p{
     background-size: cover;
     font-family: Arial;
     font-size: 15px;
+    overflow: auto;
+    height: 350px;
 }
 #h2{
     font-family: KanitBlack;
@@ -111,13 +113,14 @@ footer{
     margin-right: 20px;
 }
 #p1{
-    text-align: left;
+    text-align: center;
 }
 input{
     background: transparent;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 20px;
-    height: 20px;
+    padding: 3px;
+    margin: 3px;
 }
 ::placeholder{
     color: rgb(92, 92, 92);
@@ -142,4 +145,36 @@ a{
 #p1{
     font-size: 19px;
 }
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
+  }
+#div::-webkit-scrollbar-track{
+    background: #6a116d;
+  }
+#div::-webkit-scrollbar{
+    width: 13px;
+  }
+#div::-webkit-scrollbar-thumb{
+    background: #3f025c;
+    border: #2e0144 3px solid;
+    border-radius: 15px;
+  }
+#div::-webkit-scrollbar-thumb:hover{
+    background: #250136;
+  }
+html::-webkit-scrollbar-track{
+    background: #812285;
+  }
+html::-webkit-scrollbar{
+    width: 20px;
+  }
+html::-webkit-scrollbar-thumb{
+    background: #3f025c;
+    border: #2e0144 3px solid;
+    border-radius: 15px;
+  }
+html::-webkit-scrollbar-thumb:hover{
+    background: #250136;
+  }
 /*na sero vdolce w fortnite*/
