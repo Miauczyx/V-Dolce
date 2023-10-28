@@ -44,8 +44,8 @@ box-shadow: #ff39e5 -5px -5px 5px;}
     float:right;
 }
 body{
-    margin-right: 600px;
-    margin-left: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .center {
     display: block;
