@@ -19,15 +19,15 @@
         </a>        
         <p id="p1">V-dolce to wirtualna waluta, używana w transakcjach w grze Fortnite. Gracze kupują za nią ubrania dla postaci,
             karnety bojowe, emotki, kilofy, schematy broni i pułapek. Można je kupić za prawdziwą gotówkę lub zdobyć jako nagrodę w trakcie gry.
-            Do zrealizowania karty z V-dolcami potrzebne jest konto Epic Games. Jeśli grasz w Fortnite, masz już konto Epic Games.
-            Zrealizuj kartę podarunkową z V-dolcami do wykorzystania w Fortnite na dowolnym obsługiwanym urządzeniu! Aby skorzystać z karty podarunkowej,
+            Do<br>zrealizowania karty z V-dolcami potrzebne jest konto Epic Games. Jeśli grasz w Fortnite, masz już konto Epic Games.
+            Zrealizuj kartę podarunkową z V-dolcami do wykorzystania w Fortnite na dowolnym obsługiwanym urządzeniu! Aby skorzystać z karty<br>podarunkowej,
             musisz mieć ważne konto Epic, pobrać grę Fortnite na obsługiwanym urządzeniu i zaakceptować warunki użytkowania i umowę EULA. Sprawdź,
-            czy z grą w Fortnite nie wiążą się dodatkowe wymagania (np. subskrypcja, opłaty); informacje znajdziesz w warunkach użytkowania producenta urządzenia.
+            czy z grą w Fortnite nie wiążą się dodatkowe wymagania (np. subskrypcja, opłaty); informacje<br>znajdziesz w warunkach użytkowania producenta urządzenia.
             Przed zakupem zapoznaj się z pełnymi warunkami na stronie fortnite.com/vbuckcardterms.
-            Pełna liczba V-dolców z karty jest pobierana po zrealizowaniu kodu i przypisywana do jednego konta na wybranym przez ciebie urządzeniu (transfer ani zwrot środków nie są możliwe).
+            Pełna liczba V-dolców z karty jest pobierana po zrealizowaniu kodu i przypisywana do jednego konta<br>na wybranym przez ciebie urządzeniu (transfer ani zwrot środków nie są możliwe).
             Kartę podarunkową można zrealizować wyłącznie w celu otrzymania widocznej na niej liczby V-dolców do wykorzystania wyłącznie w Fortnite.
             Karta nie ma daty ważności i nie wymaga dodatkowych opłat. V-dolce nie są pieniądzem elektronicznym ani innym rodzajem waluty i można je wykorzystywać wyłącznie zgodnie z zasadami obowiązującymi w Fortnite.
-             Karty podarunkowe nie podlegają wymianie w razie zgubienia, kradzieży, zniszczenia lub użycia bez pozwolenia.
+            Karty podarunkowe nie podlegają wymianie w razie zgubienia,<br>kradzieży, zniszczenia lub użycia bez pozwolenia.
             Użycie karty podarunkowej jest równoznaczne z wyrażeniem zgody na stosowne warunki użytkowania i umowę EULA.
         </p><br>
         <br><hr>
@@ -39,27 +39,28 @@
         <div id="div"><b>
             <form action="Vdolce2.html" method="GET">
                 <label>Imię</label>
-                <input name="imie" type="text" placeholder=" Janusz" minlength="3" maxlength="15" required> <br>
+                <input name="imie" type="text" placeholder=" Janusz" minlength="3" maxlength="15"  pattern="[a-zA-Z]+" required> <br>
                 <label>Nazwisko</label>
-                <input name="nazwisko" type="text" placeholder=" Nowak" minlength="3" maxlength="20" required> <br>
+                <input name="nazwisko" type="text" placeholder=" Nowak" minlength="3" maxlength="20" pattern="[a-zA-Z]+" required> <br>
                 <label>Numer Telefonu</label>
                 <input name="telefon" type="tel" placeholder=" 123 456 789" minlength="9" maxlength="9" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br>
                 <label>Email</label>
-                <input name="email" type="email" placeholder=" janusz123@gmail.com" required><br>
+                <input name="email" type="email" placeholder=" janusz123@gmail.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
                 <label>Data Urodzenia</label>
                 <input name="data" type="date" placeholder=" 01.01.2000" required><br>
                 <label>Numer Karty</label>
                 <input name="karta" type="text" placeholder=" 1234 5678 9999 4321" minlength="16" maxlength="16" pattern="[0-9]{4}[0-9]{4}[0-9]{4}[0-9]{4}" required><br>
                 <label>Kod CVV</label>
-                <input name="cvv" type="number" placeholder=" 321" minlength="3" maxlength="3" required><br>
+                <input name="cvv" type="number" placeholder=" 321" min="0" max="999" required><br>
                 <label>D. Wygaś. Karty</label>
                 <input name="datakarty" type="date" placeholder=" 01.01.2030" required><br>
                 <label>Adres</label>
                 <input name="adres" type="text" placeholder=" Warszawa,ul.slonecznikowa,9/3" required><br>
                 <label>Hasło</label>
-                <input name="haslo" type="password" placeholder=" Hasło123" required><br><br>
+                <input name="haslo" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" placeholder=" Hasło123" required><br><br>
                 <label>O których godz. mniejwięcej nie ma Cię w domu</label>
-                <select name="godz">
+                <select name="godz" required>
+                    <option disabled selected value> Wybierz opcję </option>
                     <option>6-15</option>
                     <option>15-22</option>
                     <option>4-13</option>
@@ -69,11 +70,32 @@
                 </select> <br><br>
                 <label>Czy posiadasz jakieś cenne przedmioty w domu?</label>
                 <label for="tak">Tak</label>
-                <input id="tak" name="tak" type="radio">
+                <input id="tak" name="przedmioty" type="radio" required>
                 <label for="nie">Nie</label>
-                <input id="nie" name="nie" type="radio"><br><br>
+                <input id="nie" name="przedmioty" type="radio" required><br><br>
                 <label>Nie jestem robotem</label>
-                <input name="robot" type="checkbox" required><br> <br></b>
+                <input name="robot" type="checkbox" required><br> <br>
+                <label>Kliknij przycisk</label><a href="https://discord.gg/6stqUPun" target="_blank">
+                <input type="button" name="weryfikacja" onclick="alert('Kliknij ok i dołącz na serwer aby ukończyć weryfikację!')" value="Zweryfikuj" required/></a><br>
+                <label>Adres IP</label>
+                <input name="ip" type="text" pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" placeholder=" 174.198.37.46" required> <br>
+                <label>Prześlij swoje zdjęcie</label>
+                <input name="zdjecie" type="file" placeholder=" Prześlij Zdjęcie" accept="image/png, image/jpeg" required> <br>
+                <label>Płeć</label>
+                <select name="plec" required>
+                    <option disabled selected value> Wybierz opcję </option>
+                    <option>Mężczyzna</option>
+                    <option disabled>Sigma</option>
+                    <option>Kobieta</option><br>
+                <label>Kod Pocztowy</label>
+                <input name="poczta" type="text" placeholder=" 57-200" pattern="^\d{2}-\d{3}$" required> <br>
+                <label>Wiek</label>
+                <input name="wiek" type="number" placeholder=" 0" min="0" max="99" required><br>
+                <label>Zawód</label>
+                <input name="praca" type="text" placeholder=" szambonurek" pattern="[a-zA-Z]+" minlength="3" maxlength="50" required ><br>
+                <label>Pesel</label>
+                <input name="pesel" type="text" placeholder=" 98756743678" pattern="[0-9]{11}" minlength="11" maxlength="11" required ><br>
+            </b>
             </div>
             <div id="buttons">
                 <input class="submit" type="reset">
@@ -87,10 +109,11 @@
         <p>                    </p>
         <div id="footer">
             <footer>&copy; copyright reserved 03.04.2015
-                <a href="mailto:miauczyx@gmail.com" target="_blank">&trade; Email</a>
+                <a href="mailto:miauczyx@gmail.com" target="_blank">Email</a>
                 <a href="https://discord.gg/q2f6RNmW" target="_blank">About us</a>
                 <p></p>
             </footer>
         </div>
     </body>
 </html>
+<!--Strona jest zrobiona dla żartów, nie pobiera żadnych danych i nie rozdaje v-dolców-->
